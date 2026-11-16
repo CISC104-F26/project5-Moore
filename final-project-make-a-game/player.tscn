@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://be6td8tqngki0"]
+
+[ext_resource type="Script" uid="uid://hnfubwooqarq" path="res://player.gd" id="1_4flbx"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_8tgl3"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_v2muc"]
+radius = 25.317978
+
+[node name="PLAYER" type="CharacterBody2D" unique_id=1374442334]
+script = ExtResource("1_4flbx")
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="." unique_id=1151694014]
+scale = Vector2(50, 50)
+mesh = SubResource("SphereMesh_8tgl3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=968208306]
+shape = SubResource("CircleShape2D_v2muc")
