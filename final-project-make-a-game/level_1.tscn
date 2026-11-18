@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://ddoxhjw0tptb"]
+
+[ext_resource type="PackedScene" uid="uid://be6td8tqngki0" path="res://player.tscn" id="1_hbghi"]
+[ext_resource type="PackedScene" uid="uid://bkl5q70gs711f" path="res://obstacle.tscn" id="2_hn12h"]
+
+[node name="Level1" type="Node2D" unique_id=92054865]
+
+[node name="PLAYER" parent="." unique_id=1374442334 instance=ExtResource("1_hbghi")]
+position = Vector2(1, 1)
+scale = Vector2(0.75, 0.75)
+
+[node name="OBSTACLE" parent="." unique_id=736118775 instance=ExtResource("2_hn12h")]
+position = Vector2(409, -114)
+
+[node name="OBSTACLE2" parent="." unique_id=1009537806 instance=ExtResource("2_hn12h")]
+position = Vector2(929, -9)
+
+[node name="OBSTACLE3" parent="." unique_id=1665216323 instance=ExtResource("2_hn12h")]
+position = Vector2(908, 133)
+scale = Vector2(0.33813518, 0.49302962)
+
+[node name="OBSTACLE4" parent="." unique_id=1081021206 instance=ExtResource("2_hn12h")]
+position = Vector2(1327, 355)
+
+[node name="OBSTACLE5" parent="." unique_id=321808221 instance=ExtResource("2_hn12h")]
+position = Vector2(1553, 110)

@@ -1,0 +1,36 @@
+[gd_scene format=3 uid="uid://bkl5q70gs711f"]
+
+[ext_resource type="Script" uid="uid://b5qe1g40bnjqe" path="res://obstacle.gd" id="1_sl1jc"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_1bnvj"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1bnvj"]
+size = Vector2(40, 196)
+
+[sub_resource type="BoxMesh" id="BoxMesh_8tgl3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_o3oa1"]
+size = Vector2(42, 192)
+
+[node name="OBSTACLE" type="Area2D" unique_id=1665216323]
+script = ExtResource("1_sl1jc")
+
+[node name="TOP" type="MeshInstance2D" parent="." unique_id=956144113]
+position = Vector2(371.25, 119.75)
+scale = Vector2(66.227104, 355.04266)
+mesh = SubResource("BoxMesh_1bnvj")
+
+[node name="TOPHITBOX" type="CollisionShape2D" parent="." unique_id=1378377897]
+position = Vector2(371.50003, 120)
+scale = Vector2(1.6352372, 1.816075)
+shape = SubResource("RectangleShape2D_1bnvj")
+
+[node name="BOTTOM" type="MeshInstance2D" parent="." unique_id=1375520368]
+position = Vector2(369.29593, 624.79724)
+scale = Vector2(64.59187, 349.5945)
+mesh = SubResource("BoxMesh_8tgl3")
+
+[node name="BOTTOMHITBOX" type="CollisionShape2D" parent="." unique_id=2092455016]
+position = Vector2(369.29593, 624.79724)
+scale = Vector2(1.6352372, 1.816075)
+shape = SubResource("RectangleShape2D_o3oa1")
